@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MarksList{
+public class Marks{
 
     public static void main(String [] args){
 
