@@ -1,12 +1,12 @@
-import util.java.Scanner;
+import java.util.Scanner;
 
-    public class MarksList{
+public class MarksList{
 
     public static void main(String [] args){
 
- 	Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-   System.out.print("Enter number of students: ");
+        System.out.print("Enter number of students: ");
         int n = sc.nextInt();
         int marks[][] = new int[n][3];
 
@@ -63,7 +63,3 @@ import util.java.Scanner;
         }
     }
 }
-
-
-
-
