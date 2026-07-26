@@ -20,3 +20,50 @@ import util.java.Scanner;
             System.out.print("Enter choice: ");
             int ch = sc.nextInt();
 
+             if (ch == 1) {
+                System.out.print("Enter student ID (1 to " + n + "): ");
+                int id = sc.nextInt();
+                System.out.println("Enter 3 marks (Maths Chem Phy): ");
+                for (int j = 0; j < 3; j++) {
+                    marks[id-1][j] = sc.nextInt();
+                }
+            }
+            else if (ch == 2) {
+                System.out.print("Enter student ID: ");
+                int id = sc.nextInt();
+                System.out.print("Enter subject ID (1-Maths 2-Chem 3-Phy): ");
+                int sub = sc.nextInt();
+                System.out.print("Enter new mark: ");
+                marks[id-1][sub-1] = sc.nextInt();
+            }
+            else if (ch == 3) {
+                System.out.print("Enter subject ID (1 to 3): ");
+                int sub = sc.nextInt();
+                int sum = 0;
+                for (int i = 0; i < n; i++) {
+                    sum = sum + marks[i][sub-1];
+                }
+                System.out.println("Average = " + sum / n);
+            }
+            else if (ch == 4) {
+                System.out.print("Enter student ID: ");
+                int id = sc.nextInt();
+                int sum = marks[id-1][0] + marks[id-1][1] + marks[id-1][2];
+                System.out.println("Average = " + sum / 3);
+            }
+            else if (ch == 5) {
+                System.out.print("Enter student ID: ");
+                int id = sc.nextInt();
+                int sum = marks[id-1][0] + marks[id-1][1] + marks[id-1][2];
+                System.out.println("Total = " + sum);
+            }
+            else if (ch == 6) {
+                break;
+            }
+        }
+    }
+}
+
+
+
+
