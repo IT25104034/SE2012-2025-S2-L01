@@ -6,4 +6,7 @@ import util.java.Scanner;
 
  	Scanner input = new Scanner(System.in);
 
- System.out.print("Enter the  
+   System.out.print("Enter number of students: ");
+        int n = sc.nextInt();
+        int marks[][] = new int[n][3];
+
